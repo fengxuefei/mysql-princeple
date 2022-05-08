@@ -8,7 +8,7 @@
 
 ### 2.1 解压压缩包到合适目录下
 
-<img src="E:%5Cfxf%5CWorkSpace%5CMysql%E5%8E%9F%E7%90%86%5CMysql%E5%AE%89%E8%A3%85.assets%5CMysql%E5%8E%9F%E7%90%86-1.png" alt="1651938797874"  />
+![1652024096056](Mysql%E5%AE%89%E8%A3%85.assets/1652024096056.png)
 
 ### 2.2 在安装目录下创建配置文件my.ini，只需要配置basedir即可，根据安装目录配置
 
@@ -34,7 +34,7 @@ default-storage-engine=INNODB
 
 ### 2.3 配置环境变量
 
-![1651939428059](E:%5Cfxf%5CWorkSpace%5CMysql%E5%8E%9F%E7%90%86%5CMysql%E5%AE%89%E8%A3%85.assets%5CMysql%E5%8E%9F%E7%90%86-2.png)
+![1652024179128](Mysql%E5%AE%89%E8%A3%85.assets/1652024179128.png)
 
 
 
@@ -47,7 +47,7 @@ mysqld  --initialize-insecure （建议使用，不设置root密码）
 mysqld  --initialize --console（不建议使用，在控制台生成一个随机的root密码）
 ```
 
- ![img](E:%5Cfxf%5CWorkSpace%5CMysql%E5%8E%9F%E7%90%86%5CMysql%E5%AE%89%E8%A3%85.assets%5CMysql%E5%8E%9F%E7%90%86-3.png) 
+![1652024214812](Mysql%E5%AE%89%E8%A3%85.assets/1652024214812.png)
 
 ### 2.5 安装Mysql
 
@@ -64,7 +64,7 @@ mysqld -remove
 
 执行命令成功后一般会出现Service successfully installed
 
- ![img](E:%5Cfxf%5CWorkSpace%5CMysql%E5%8E%9F%E7%90%86%5CMysql%E5%AE%89%E8%A3%85.assets%5CMysql%E5%8E%9F%E7%90%86-4.png) 
+ ![1652024258169](Mysql%E5%AE%89%E8%A3%85.assets/1652024258169.png)
 
 ### 2.6  开启Mysql服务 
 
@@ -78,7 +78,7 @@ net start mysql
 mysql -uroot -p
 ```
 
-![1651941289419](E:%5Cfxf%5CWorkSpace%5CMysql%E5%8E%9F%E7%90%86%5CMysql%E5%AE%89%E8%A3%85.assets%5CMysql%E5%8E%9F%E7%90%86-5.png)
+![1652024284062](Mysql%E5%AE%89%E8%A3%85.assets/1652024284062.png)
 
 ### 2.8 设置（修改）密码
 
@@ -97,5 +97,4 @@ flush privileges;
  exit
 ```
 
- 注意：Mysql8.0之后修改密码的方式无法使用password函数 ! 
-
+ **注意**：Mysql8.0之后修改密码的方式无法使用password函数 ! 
